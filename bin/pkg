@@ -1,0 +1,25 @@
+#!/usr/bin/bash
+#
+. /etc/pkg/pkg.conf
+
+if [ "$1" = -i ]
+then
+  $APT install "$2"
+fi
+
+if [ "$1" = -r ]
+then
+  $APT remove "$2"
+fi
+
+if [ "$1" = -d ]
+then
+  $APT update "$2"
+fi
+
+if [ "$1" = -g ]
+then
+  $APT upgrade "$2"
+fi
+BGreen='\033[1;32m'
+echo -e "JOB${BGreen} done"
