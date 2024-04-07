@@ -1,3 +1,8 @@
 # PKG
 Pkg is an upgraded apt
-but with shorter options.
+with:
+
+- shorter options
+- auto sudo function
+- clear on run function
+- and all options in one file
