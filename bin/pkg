@@ -2,6 +2,18 @@
 #
 . /etc/pkg/pkg.conf
 
+if [ "$CLEAR_TERM" = 1 ]
+then
+  clear
+fi
+
+if [ "AUTO_SUDO" = 0 ]
+then
+  sed -i "s/\(APT *= *\).*/\1apt/" /etc/pkg/pkg.conf
+else
+  sed -i "s/\(APT *= *\).*/\1sudo apt" /etc/pkg/pkg.conf
+fi
+
 if [ "$1" = -i ]
 then
   $APT install "$2"
