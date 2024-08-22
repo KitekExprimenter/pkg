@@ -1,1 +1,1 @@
-<iframe src="./etc/pkg/README.md"></iframe>
+<frame src="./etc/pkg/README.md"></frame>
