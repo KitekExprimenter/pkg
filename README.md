@@ -1,1 +1,1 @@
-<a href="./etc/pkg/README.md">HERE</a>
+<frame href="./etc/pkg/README.md" />
